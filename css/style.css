@@ -13,8 +13,8 @@
     padding-left: 24px;
     padding-right: 24px;
     margin: 0 auto;
-    outline: 2px solid red;
-}
+    /* outline: 2px solid red;  */
+} 
 /* body */
 body {
     color: var(--bgi-button-color);
@@ -25,6 +25,7 @@ body {
 }
 /* header */
 .header {
+    
     display: flex;
     justify-content: center;
     width: 1440px;
@@ -61,6 +62,7 @@ body {
     font-size: 16px;
     width: 30px;
     height: 20px;
+    margin-right: 10px;
 }
 .header-button {
     width: 141px;
@@ -167,14 +169,14 @@ body {
     width: 400px;
     height: 120px;
     margin: 0 auto;
-    padding-top: 8px;
+    padding-bottom: 20px;
 }
 .quote-text {
     padding-top: 75px; 
     display: inline-block;
 }
 /* second-hero */
-.second-hero {
+/* .second-hero {
     background-image: url(../img/second-hero.jpg);
     width: 1440px;
     height: 741px;
@@ -198,6 +200,13 @@ body {
 }
 .second-hero {
     text-align: center;
+} */
+/* trailer */
+.trailer {
+    width: 1440px;
+    margin: 0 auto;
+    height: 741px;
+    align-items: center;
 }
 /* languages */
 .languages-list {
@@ -241,39 +250,56 @@ body {
     margin: 0 auto;
     background-image: url(../img/footer-Avatar.jpg);
 }
-.footer-logo {
-    width: 183px;
-    height: 70px;
-    margin-left: 204px;
-}
-.footer-list-item {
+
+footer {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.footer-subtext {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Inter;
+    text-align: center;
+    padding-top: 65px;
+}
+
+.item {
     gap: 20px;
+    align-items: center;
 }
-.footer-border {
-    color: var(--white-color);
+
+.border {
     width: 269px;
-    height: 0px;
+    height: 1px;
 }
-.footer-list-text {
+
+.footer-link,
+.footer-text {
     color: var(--white-color);
     font-family: Inter;
-    padding-left: 547px;
+    font-size: 20px;
 }
-.footer-list-link {
-    color: var(--white-color);
-    font-family: Inter;
-    
+
+.footer-border {
+    width: 0px;
+    height: 153px;
+    border: 1px solid var(--white-color);
+    margin-right: 79px;
 }
-.footer-flex {
+
+.logo {
+    margin-left: 204px;
+    margin-right: 81px;
+}
+
+.footer-list {
+    align-items: center;
+}
+
+.item {
     display: flex;
     justify-content: center;
-    margin: 0 auto; 
-    align-items: center;
-} 
-.footer-list-subtext {
-    color: var(--white-color);
 }
 
